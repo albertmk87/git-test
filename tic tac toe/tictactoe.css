@@ -1,0 +1,42 @@
+.tictactoe{
+	display: grid;
+	grid-template-rows: repeat(3,100px);
+	grid-template-columns: repeat(3,100px);
+	justify-content: center;
+ 	 align-content:  center;
+	
+
+}
+
+.square {
+	background: lightgrey;
+	margin:1px;
+	border:1px solid black;
+	text-align: center;
+  	display: flex;
+ 	 justify-content: center;
+ 	 align-items: center;
+  	font-size:2rem;
+  	color:red;
+}
+
+.turn {
+	text-align: center;
+	margin-top: 10px;
+	font-size: 2rem;
+	color:green;
+}
+
+
+#res {
+	margin:10px auto;
+	font-size: 1rem;
+	text-align: center;
+	
+}
+
+.interface {
+	text-align: center;
+	color:red;
+	font-size: 2rem;
+}
