@@ -1,0 +1,55 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+.container {
+	background-color: lightblue;
+	width:30%;
+	margin:0 auto;
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	height:auto;
+	padding: 0px;
+}
+
+
+#headline {
+	text-align: center;
+	color:white;
+	font-weight: 800;
+}
+
+#guessNumber {
+	display: block;
+	margin:10px auto;
+	padding: 20px 20px 20px 20px;
+	font-size: 1rem;
+	text-align: center;
+}
+
+
+#btn {
+	background-color: lightyellow;
+	border: none;
+	border-radius: 50px;
+	padding:10px 30px;
+	text-align: center;
+	display: block;
+	margin:10px auto;
+	font-size: 2rem;
+}
+
+#previousP, #remainingP{
+	text-align: center;
+	margin: 10px;
+	font-size: 2rem;
+}
+
+h3 {
+	text-align: center;
+	font-size: 2rem;
+}

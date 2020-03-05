@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HangMan</title>
+	<link rel="stylesheet" type="text/css" href="hangman.css">
+</head>
+<body>
+
+	<div class="hangman">
+			<div id="word"></div>
+			<input id="input" type="text" placeholder="insert a letter" name="" maxlength = "1" onkeypress="return (event.charCode > 64 && 
+	event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)">
+			<p id="remaining">Guesses left:</p>
+			<p id="playing">Still playing</p>
+	
+	</div>
+
+
+
+<script type="text/javascript" src="hangman.js"></script>
+</body>
+</html>
