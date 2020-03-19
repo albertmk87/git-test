@@ -1,0 +1,139 @@
+.content {
+	display: flex;
+}
+
+.content >* {
+	flex:1;
+}
+
+button {
+	display: block;
+	}
+
+
+	.left {
+		padding: 20px;
+		margin:20px;
+	}
+
+	.left > * {
+		margin:  40px;
+	}
+
+	.top {
+		border:3px solid green;
+		padding-left: 20px;
+	}
+
+	.top >* {
+		margin: 10px;
+	}
+
+	.top input {
+		width: 90%;
+		padding:10px;
+	}
+
+	.bottom {
+		border:3px solid red;
+		padding-left:20px;
+	}
+
+	#budgetBtn {
+		border:2px solid green;
+		background: transparent;
+		color: green;
+		padding: 10px;
+	}
+
+	#budgetBtn:focus {
+		cursor: pointer;
+	}
+
+	.bottom input {
+		width: 90%;
+		padding:10px;
+		margin: 10px;
+	}
+
+		.bottom >* {
+		margin: 10px;
+	}
+
+	#budgetExpenseBtn {
+		border:2px solid red;
+		background: transparent;
+		color: red;
+		padding: 10px;
+	}
+.right {
+	display: flex;
+	padding: 20px;
+		margin:20px;
+}
+
+.right >*{
+	flex:1;
+	margin:  40px;
+
+}
+
+
+.bottomRight {
+	display: flex;
+		padding: 20px;
+		margin:20px;
+}
+
+.bottomRight >* {
+	flex:1;
+	margin:  40px;
+}
+
+.expensesContainer{
+	display: flex;
+		
+}
+
+.expensesContainer >* {
+	flex:2;
+
+}
+
+.smallBtn {
+	margin-top: 20px;
+	color:red;
+	flex:1;
+	align-self: flex-start;
+	
+}
+
+.editBtn {
+	margin-top: 20px;
+	color:gray;
+	flex:1;
+	align-self: flex-start;
+	
+}
+
+.editBtn:hover {
+	cursor: pointer;
+
+
+}
+
+.smallBtn:hover {
+	cursor: pointer;
+
+
+}
+
+
+.negative {
+	color:red;
+}
+
+
+.positive {
+	color:green;
+}
