@@ -62,7 +62,7 @@ let input=document.querySelector("#input");
 let remaining=document.querySelector("#remaining");
 let randomWord=obj.puzzle;
 
-
+if(randomWord.length<8)
 const game1=new Hangman(randomWord,10);
 
 wordContainer.textContent=game1.getPuzzle();
