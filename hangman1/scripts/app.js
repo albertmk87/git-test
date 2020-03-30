@@ -17,15 +17,15 @@ if(word.length>8){
 }
 
 puzzleDOM.textContent=game1.getPuzzle();
-remainingGuessDOM.textContent=`You have ${game1.guessesLeft} guesses left`;
+remainingGuessDOM.textContent=game1.setStatusMessage();
 
 window.addEventListener("keypress" , (e)=>{
 	if(game1.status==="playing"){
 		game1.makeGuess(e.key);
-		statusDOM.textContent=game1.status;
+
 		letterGuessed.textContent=`You have already tried the following letters ${game1.guessedLetters}`;
 		puzzleDOM.textContent=game1.getPuzzle();
-		remainingGuessDOM.textContent=`You have ${game1.guessesLeft} guesses left`;
+		remainingGuessDOM.textContent=game1.setStatusMessage();
 	}
 
 })

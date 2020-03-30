@@ -13,7 +13,12 @@ class Hangman {
 		this.word.forEach(letter=>{
 			if(this.guessedLetters.includes(letter)){
 					puzzle+=letter;
-			}else{
+			}else if(letter===" "){
+				puzzle+=" ";
+				this.guessedLetters.push(" ");
+			}
+
+			else{
 				puzzle+="*";
 			}
 		})
@@ -45,13 +50,23 @@ class Hangman {
 		})
 
 		if(this.guessesLeft===0){
-			let word1=this.word.join("");
-			this.status=`You failed the word was ${word1}`;
+			
+			this.status=`failed`;
 		}else if(youWon){
-			this.status="You won";
+			this.status="finished";
 		}else{
 			this.status="playing";
 		}
 }
+
+	setStatusMessage(){
+		if(this.status==="playing"){
+			return `You are still playing and you have ${this.guessesLeft} guesses`;
+		}else if(this.status==="finished"){
+			return `Congratulations you won`;
+		}else if(this.status==="failed"){
+			return `You lost and the word was ${this.word.join(" ")}`;
+		}
+	}
 
 }
